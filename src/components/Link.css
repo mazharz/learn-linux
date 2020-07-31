@@ -1,0 +1,15 @@
+.link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 2px solid var(--accent);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  transition: all .3s ease-out;
+}
+
+.link:hover,
+.link:active {
+  /* text-shadow: 0 0 5px var(--accent); */
+  box-shadow: 0 0 50px var(--accent), inset 0 0 50px var(--accent);
+}

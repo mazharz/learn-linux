@@ -1,6 +1,7 @@
 .layout {
-  --foreground: #aaa;
+  --foreground: #eee;
   --background: #333;
+  --accent: #c72c41;
   background-color: var(--background);
   color: var(--foreground);
   height: 100%;
