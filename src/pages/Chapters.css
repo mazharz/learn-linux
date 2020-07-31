@@ -1,0 +1,9 @@
+.chapters {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  padding: 40px 0px;
+}
