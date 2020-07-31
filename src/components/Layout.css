@@ -1,0 +1,7 @@
+.layout {
+  --foreground: #aaa;
+  --background: #333;
+  background-color: var(--background);
+  color: var(--foreground);
+  height: 100%;
+}
