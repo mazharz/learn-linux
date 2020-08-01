@@ -92,7 +92,7 @@
 }
 
 .chapter pre {
-  margin: 0rem 0rem 1rem .7rem;
+  margin: 0rem 0rem 1rem 0rem;
   padding: 1rem;
   border: 5px solid var(--accent);
   font-family: RobotoMono;
@@ -102,6 +102,7 @@
 .chapter pre code {
   font-family: RobotoMono;
   color: var(--foreground);
+  line-height: 1.5rem;
 }
 
 .chapter code {
