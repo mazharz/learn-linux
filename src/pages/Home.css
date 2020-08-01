@@ -4,9 +4,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0;
 }
 
 .home__paragraph {
   max-width: 780px;
   margin-bottom: 1rem;
+}
+
+@media(max-width: 830px) {
+  .home__paragraph {
+    margin: 0 1rem 1rem;
+  }
 }

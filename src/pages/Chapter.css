@@ -7,6 +7,12 @@
   min-height: 100vh;
 }
 
+@media(max-width: 830px) {
+  .chapter {
+    margin: 0 1rem;
+  }
+}
+
 .chapter__title {
   font-size: 2.2rem;
   font-weight: bold;

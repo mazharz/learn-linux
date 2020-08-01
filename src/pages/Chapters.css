@@ -5,5 +5,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--background);
-  padding: 40px 0px;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+@media(max-width: 830px) {
+  .chapters {
+    margin: 0 1rem;
+  }
 }
