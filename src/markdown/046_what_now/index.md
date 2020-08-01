@@ -1,12 +1,5 @@
----
-layout: post
-title: Chapter Forty six - What now?
-pathToImage: ../../pic.jpg
----
+# Scripting
 
-## Scripting
+# LPIC
 
-## LPIC
-
-## Conclusion
-
+# Conclusion

@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twelve - Print and view file content
-pathToImage: ../../pic.jpg
----
-
 You have no idea how much good stuff is about to enlighten this journey of ours. You may think that these first steps of our journey are "not as useful" as the important parts of Linux that we should learn. But that can't be more wrong. For example, every command that we run somehow shows us something right? Remember when we used the `-h` how the command wrote it's output on the terminal? Now we're going to learn just that.
 
-## echo
+# echo
 
 echo will write on the terminal. Take the analogy of screaming in the mountains, when your voice is echoed back to you:
 
@@ -61,7 +55,7 @@ before tab        after tab
 
 That's all you need to know about echo for now. Later, if you get into scripting, you'll notice that you need to learn more about it. And then, you'll be comfortable using the man page.
 
-## cat
+# cat
 
 Remember this fluffy command? Back then I told you that it was a cat playing the shadow game. But I was lying :( Sorry to disappoint you, `cat` is short for concatenation. You are already familiar with the simplest use of it:
 
@@ -88,7 +82,7 @@ and this is the content of the second file.
 
 You should see the content of both files printed in the order you provided them. That is the concatenation of multiple files. Later we’ll learn to put back the output into a file so we concatenate the two files and write it in another one.
 
-## tac
+# tac
 
 Can you guess what this program does? Change your first file so that it has two lines at least. Then run our cat to see if it works fine:
 
@@ -108,7 +102,7 @@ line 1
 
 That was a very complicated command to learn! As surprising as it may seem for this command to be useful, it actually is. Imagine you have a file which contains thousands of lines. And you decide to view the first line of that file. If you use `cat`, you will have to scroll back up thousands of lines, but using `tac`, you’ll see the first line where the output ends (which is right before your prompt). This is just one possible use case for this command, in fact the next commands will provide a better solution to this problem of viewing large files.
 
-## more
+# more
 
 Change your file's content to have like a dozen lines. Using cat isn't the best method to view that file's content anymore. You can use the command `more` to view file content page by page:
 
@@ -118,7 +112,7 @@ $ more file.txt
 
 When the content is less than a page of terminal window, more will work the same as cat but when there's more content, you can see the content, page by page by hitting the space or line by line by hitting the enter on your keyboard. I don't know if you noticed or not, but you can't go back a page :/ I swear I haven't used `more` to view anything. The reason being the existence of less.
 
-## less
+# less
 
 If you're a minimalist, you may believe that less is more. Linux seems to be believing the same thing. `less` command is literally more than more. It does a better job at showing file content.
 
@@ -134,7 +128,7 @@ $ less file.txt file2.txt
 
 Now you can see on the status bar down in your terminal that you are in file 1 of the two files. To switch between the files, you can use `:n` for going to the next file and `:p` for previous. While I'm on a roll talking about `less`, let me tell you that you can search for a keyword using the forward slash key (`/`). Hit that and type something that you know is in your content. The found results will be highlighted and you can view the next match by hitting `n` and the previous by `N` (`shift+n`).
 
-## diff
+# diff
 
 Before we wrap this chapter up, let's see one more command. This one is used in `git` if you happen to be a developer, you may be familiar with it. Create two files that have a slight difference. Like `file.txt` could be "hello world" and `file2.txt` could be "helo world". Now run this:
 
@@ -148,7 +142,7 @@ $ diff file.txt file2.txt
 
 I'm not going to teach you `diff` now. But I just wanted you to know that we have something like that, which you can learn later, if you want to. No pressure at all.
 
-## Conclusion
+# Conclusion
 
 In this chapter we learned how to print on the terminal and how to view file's content in the terminal in case we need to. `echo`, `cat` and `less` are the most important commands that you should definitely consider focusing on. But don't worry about memorizing them, they will be repeated so many times that your brain will have no choice but to recall them. Remember I said that you should definitely put those files in the home directory or the commands won't work? You'll learn in the next chapter why that is and how you can make them work if those files were elsewhere. Take a longer break and when you're ready, meet me in the next one :)
 

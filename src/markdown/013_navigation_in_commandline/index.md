@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Thirteen - Navigation in command-line
-pathToImage: ../../pic.jpg
----
-
 You know how to move around in a file manager. You double (or single) click on directories (aka. folders) to open them or use the up or back buttons to go up or back one directory. In the terminal, as I said before, we are in a directory at any time. Here we will learn how to navigate and find our way.
 
-## pwd
+# pwd
 
 `pwd` or `p`rint `w`orking `d`irectory is a very self-descriptive command. It'll just tell you where you are:
 
@@ -17,7 +11,7 @@ $ pwd
 
 If you want, you can read it's man page in less than a minute :)
 
-## Absolute and Relative paths
+# Absolute and Relative paths
 
 Suppose, I meet you in the street and ask you the directions to the nearest park. Your answer would be something like this: "go straight ahead and turn left in the first square you reach". I can get to the park with no problem. Now I can use that sentence to guide anyone in a similar situation. For example if I were in Paris and someone asks me about a park, I may happen to give that exact same description to guide that person to another park. On the other hand, if you were to give me this address: "Cosmos, Milky way, Solar System, Earth, America continent, Canada, State, City, Avenue, ...". Then I couldn't use that address to guide the person in Paris. This right here is the fundamental difference between a relative and an absolute address (along with the fact that using relative paths, we don’t need to address from the root everytime). In Linux, absolute addresses always start at the root (`/`) but relative addresses can be starting with any of these forms:
 
@@ -27,7 +21,7 @@ Suppose, I meet you in the street and ask you the directions to the nearest park
 
 A single dot (.) means "the current directory that we are in" and a double dot (..) means "the parent directory of the current one that we are in". So the second example can be translated into: "something inside 'subdir' which is inside 'dir' itself, and 'dir' is right here where we are". The first example and the second one are exactly the same. But you can translate the third example as "something inside the 'subdir' which is in 'dir' which is one directory above the one that we are in".
 
-## cd
+# cd
 
 `c`hange `d`irectory is one of the most useful commands in the world of Linux, Unix, Windows, Mac and everywhere else :D We're all united on this matter. You may have guessed it, to change to a specific directory, we give the path to that directory to the cd command as an argument. Some examples include:
 
@@ -88,7 +82,7 @@ I don’t know if you remember or not, but we previously saw how "\n" resulted i
 
 But this is of course a bit messier. Now try putting a single quote (') or double quote (") in the directory's name and see how you can fix those. Search for it online and you'll find the answer. *A hint: there are two ways to do it for each situation.*
 
-## Conclusion
+# Conclusion
 
 What you just learned here is going to be extremely useful in future. This is the basis of what your command line knowledge will be built upon. It is an easy concept, but you need to practice for it to be natural to you. Create a series of nested directories and try to navigate your way through them using different types of relative paths and absolute paths. Once you’re comfortable (or a little bit comfortable) with navigation, proceed to the next chapter.
 

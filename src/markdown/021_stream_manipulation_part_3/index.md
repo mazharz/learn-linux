@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty one - Stream manipulation part 3
-pathToImage: ../../pic.jpg
----
-
 Now before we begin, I just have to mention that you most definitely won't learn everything about `sed` and `awk` here. There are books written on each of these programs. So don't expect this to be the mastery of these commands, instead, think of this chapter as just an introduction.
 
-## sed
+# sed
 
 `s`tream `ed`itor. I love this one in particular, I learned it via `vim`'s integration and got amazed by how much I was able to do with it. Let's see it's structure first:
 
@@ -89,7 +83,7 @@ something here@
 
 The `caret` means the `beginning of the line` and the `dollar sign` means the `end of the line`. Now `sed` has many more options and even other syntaxes. Just search for it and you'll find loads of tutorials online and in forms of books.
 
-## awk
+# awk
 
 It's man page says that it's a programming language, so, yeah! I don't dare to claim that I even know it enough, I have a sense of what it's basic usages are, so here are some interesting usages of `awk`:
 
@@ -130,7 +124,7 @@ john anotherfile
 
 What we did was to filter only the third and ninth column of the output that `ls -l` makes, which results in the file's owner and name to be printed.
 
-## Conclusion
+# Conclusion
 
 Your only limit is your imagination now. You know way too many powerful tools to not be able to do almost anything with them. I'll wrap the stream manipulation right here because we have seen enough! Using only these commands that you know by now, you can produce unimaginable outputs just by combining the programs and piping them together through the standard streams. I hope you enjoyed these three parts, because when I first learned these, I was amazed by the possibilities and the opportunities they gave me. Just being able to do this much in the terminal is enough to make you feel good about yourself. So that's it for now, see you in the next chapter with more fun stuff.
 

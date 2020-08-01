@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty eight - Kernel modules and devices
-pathToImage: ../../pic.jpg
----
-
 Don't be afraid of the title. It's no big deal. In fact, this is another relatively short chapter. Let's dive in:
 
-## lspci
+# lspci
 
 ```bash
 $ lspci
@@ -21,7 +15,7 @@ $ lspci
 
 Simply lists the PCI devices. If you have ever opened a computer case, you have definitely seen one of those long slots that you usually attach your graphics card to. That is a PCI device. You can use this command to check if your PCI devices are detected or not.
 
-## lsusb
+# lsusb
 
 Obvious enough, lists the USB devices. Note that USB devices include some internal connections that use the same USB standard.
 
@@ -33,7 +27,7 @@ Bus 001 Device 005: ID 0bda:b023 Realtek Semiconductor Corp. Bluetooth Radio
 ...
 ```
 
-## lsmod and modinfo
+# lsmod and modinfo
 
 Now let's get to the kernel modules. Simple, yet powerful little knowledge that we could use to our advantage.
 
@@ -72,7 +66,7 @@ name:           bluetooth
 
 Since I'm using a laptop, I have a bluetooth built-in, so depending on either if you're using a virtual machine or that you have a PC without a bluetooth, you may not have this module loaded and that's fine.
 
-## rmmod
+# rmmod
 
 Now let's remove a module:
 
@@ -90,7 +84,7 @@ $ lsmod | grep video
 $
 ```
 
-## modprobe
+# modprobe
 
 And to load that module again:
 
@@ -104,7 +98,7 @@ Here you may not see a clear effect but I just wanted to let you know that it's 
 
 <p class="note">Note: If you take a look at <code>rmmod</code>'s man page you'll see that it advises you to use <code>modprobe -r</code> instead, since that's a more intelligent command.</p>
 
-## Conclusion
+# Conclusion
 
 I agree. Too abstract and vague of a chapter this was. You probably won't need it but if you do, you'll know it's no big deal just because it deals with kernel.
 

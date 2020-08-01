@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Thirty three - More on bash
-pathToImage: ../../pic.jpg
----
-
 At this point, you should be quite comfortable with the command line. This command line of ours, in most Linux distros, is `bash`. So let's jump right in and see different features and characteristics of it.
 
-## ;
+# ;
 
 The semicolon. In programming, you know semicolons to be the last character of some lines of code! To put it more precisely, it is put at the end of statements. In `bash`, a semicolon does more or less the same job. It separates commands, sort of defining the border of commands. Take a look at the example below:
 
@@ -25,7 +19,7 @@ b
 
 Obviously, there is no limit on how many commands you run in this way (or is there?). I honestly don't know if there is a limit and I don't really care :D It's not important, because you rarely need to do this. If your chain of commands gets too much, you're better off putting them in a file and run the file instead (that is what a script is).
 
-## !!
+# !!
 
 That's right! Double exclamation marks! Go ahead and try it (If it were me, I wouldn't just trust me, but this one is really safe):
 
@@ -67,7 +61,7 @@ ls -l
 
 Using the name of a previously executed command, you can rerun it with an exclamation mark. As we saw before, we can use `Ctrl+r` to do a search which is far more helpful, but these are also methods to execute a more recent command.
 
-## && and ||
+# && and ||
 
 The two ampersands mean "logical and" and the two pipes mean "logical or". To better understand this, take a look at this:
 
@@ -89,7 +83,7 @@ In the first two, we told `bash` to run `ls` *and* `echo`. So the first line run
 
 The second two sets of commands represent the "logical or". In contrast, an "or" means either of the options. So `bash`, when confronted with a set of commands with `||` in between them, is going to start from the left and execute the commands, whenever he runs a command successfully, it abandons the rest. Logically the reverse process. The last example represents how we can stop this behavior with a semicolon.
 
-## Sub-shell
+# Sub-shell
 
 Oh boy! This is a power tool :D It is amazing! I'll shut up so you can see it for yourself:
 
@@ -115,7 +109,7 @@ $ sudo apt install $(cat ./file)
 
 I know we haven't seen `apt` yet, but think of it as a program that installs software. This way, we could have a list of space-separated program names in a file (such as `audacity` and `blender` above). Then install them all at once via that command and with the help of a sub-shell.
 
-## env, set and printenv
+# env, set and printenv
 
 A variable is something that you can put some value in. Sort of like a bowl. Environment variables are bowls that are used in the environment! Basically there are variables in your operating system that are set through different mechanisms and they are used by different programs to achieve certain results. You know that every command you run is a program of some sort. The reason these are called environment variables is because the commands you run are run in an environment (namely, shell). This shell has some variables set into it. Just like that. So let's actually see them:
 
@@ -171,7 +165,7 @@ Environment variables usually change the behavior of commands or provide additio
 export http_proxy="http://localhost:1234"
 ```
 
-## which
+# which
 
 I have told you about this one before, it locates a command. Simply to find out where is the ls command, you can execute this:
 
@@ -180,7 +174,7 @@ $ which ls
 /usr/bin/ls
 ```
 
-## whereis
+# whereis
 
 If you take a look at the man page, this one not only finds the executable, but it also finds it's manual page and it's source (if available):
 
@@ -191,7 +185,7 @@ ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
 
 You see, man pages are stored in a `gzip` file :D A little bit more knowledge everyday. Imagine how much you will learn about your operating system in 10 years.
 
-## read
+# read
 
 To put some user input in a variable:
 
@@ -214,7 +208,7 @@ this is a better way to provide password
 
 The first command is given two strings, one of which we assume is password (literally written as "password"). To prevent typing the password in a terminal like this, we can use the `-s` option of `read` and give it the password to store in a variable. `-s` causes `read` to prevent showing the string on the terminal. After running the `read` command I gave it "password" as input, but it's not shown here obviously, so you have to try it for yourself to understand what I'm talking about.
 
-## alias
+# alias
 
 > Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth.
 > - Oscar Wilde
@@ -250,7 +244,7 @@ alias l='ls -CF'
 
 So have fun making some clever ones and if you did, share them so we can all be lazier :D
 
-## Conclusion
+# Conclusion
 
 That was hell of a chapter. Good job. I promise the next chapter will be as short as possible (maybe even the shortest).
 

@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty three - Process management part 2
-pathToImage: ../../pic.jpg
----
-
 Let's jump in, shall we?
 
-## bg
+# bg
 
 It's short for `b`ack`g`round. But in order to be able to use it, we should first learn how to suspend a process. First, run a `sleep` command:
 
@@ -29,7 +23,7 @@ $ bg
 [1]+ sleep 1h &
 ```
 
-## jobs
+# jobs
 
 According to its man page it displays status of jobs in the current session. By session it means the current shell environment (you can think of it as the current terminal). If you execute it right after opening a new terminal, you'll see that it does nothing. But now that we pushed a process to the background, it'll tell us this:
 
@@ -54,7 +48,7 @@ $ jobs
 [2]+  Running                 sleep 2h &
 ```
 
-## fg
+# fg
 
 Now, I want to bring back those processes. What should I do?
 
@@ -79,7 +73,7 @@ sleep 1h
 _
 ```
 
-## background control operator (&)
+# background control operator (&)
 
 What if we want to execute a process in the background from the very beginning?
 
@@ -104,7 +98,7 @@ $ ps
 17574 pts/3    00:00:00 ps
 ```
 
-## disown
+# disown
 
 First execute a `ps` from another terminal to see these `sleep` processes:
 
@@ -153,7 +147,7 @@ $ google-chrome --proxy-server=localhost:9050 & disown
 [1] 19706
 ```
 
-## Conclusion
+# Conclusion
 
 Very good. You now have a good-enough understanding of the processes in a Linux system. Of course, if you want, you can get deeper and learn about things like the `nice`ness of a process or other concepts. This is enough for a Linux user to be able to handle his/her processes on a daily basis. And also, in desktop environments you still have the task manager :D So if you're lazy, you can use that instead. I wanted to teach you the hard way to do it, so you are not afraid if you ever need to handle your processes in a Linux server that doesn't have any graphical interface.
 

@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Nineteen - Stream manipulation part 1
-pathToImage: ../../pic.jpg
----
-
 Now we know how streams work but without knowing how we can manipulate them, what good are they? So let's begin by the most useful commands:
 
-## grep
+# grep
 
 This is a very useful command, I use it on a daily basis (literally). Simply, it filters the stream and shows only the lines that contain a specific string of characters. Seeing it in action is far easier to understand. First let's create a file with these lines in it:
 
@@ -42,7 +36,7 @@ Depending on your distribution, there may be some internal configuration that ma
 
 There are numerous use cases where `grep` comes in handy and I'll use it in different circumstances later so don't worry about examples because you'll see it more often.
 
-## head and tail
+# head and tail
 
 To filter the beginning or the end of a file, we can use these two commands. They're really helpful. Not just because they give you the head and tail, because they ONLY give you that :) I personally had a huge text file (close to 2G) which I needed for university data processing homework. Almost all the text editors crashed when I tried to open that file, but i needed to see the structure of that file (not seeing the whole thing but getting an idea of how the file is organized). So i just used these two commands and they worked like a charm :D First create a file with 15 lines or more, then:
 
@@ -61,7 +55,7 @@ four
 five
 ```
 
-## sort
+# sort
 
 It does what it's named for. Sorts!
 
@@ -85,7 +79,7 @@ bbab
 
 Take a look at it's man page and note that it also has a `-r` option to reverse the sorting behavior.
 
-## wc
+# wc
 
 I just want to know who named this program :/ It's short for `w`ord `c`ount.
 
@@ -127,7 +121,7 @@ Back to our wc command. It has three useful options:
 
 So if you supply any of the above options, `wc` only gives you that piece of information instead of all three. It may seem unnecessary now, but it's really useful to get only a single number as our output to pass to other programs.
 
-## Use them with pipe
+# Use them with pipe
 
 All these commands that we learned in this lesson work with streams too, so instead of supplying a file name to read their content from, we can pass streams to them. Remember `pipe`? Here we go:
 
@@ -153,7 +147,7 @@ $ echo -e "one\ntwo\nthree" | grep t | sort | wc -l
 
 Here the output of `echo` is passed to `grep`, then the output of `grep` is passed to `sort` and lastly, the output of `sort` is passed to wc and it's option `-l` prints the number of lines.
 
-## Conclusion
+# Conclusion
 
 Now you know the power of pipe and streams. In the next lesson we learn more programs and begin to do more interesting stuff with streams. Have some fun with these commands before joining me on the next lesson. See you there :)
 

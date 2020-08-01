@@ -1,0 +1,10 @@
+.chapter {
+  color:  var(--foreground);
+  background-color: var(--background);
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.chapter p {
+  margin-bottom: 1rem;
+}

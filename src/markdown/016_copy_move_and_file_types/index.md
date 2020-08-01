@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Sixteen - Copy, move and file types
-pathToImage: ../../pic.jpg
----
-
 Copying files or directories or moving them from one place to another. This was most of my experience with operating systems when I was a 9-year-old kid. These might not be your day-to-day commands, but you'll need them eventually. If you're planning on learning scripting in the future, you'll need them even more. Let's jump in.
 
-## cp
+# cp
 
 `c`o`p`y:
 
@@ -42,7 +36,7 @@ The file will only be copied there, so now we have two identical files in `john`
 $ cp -r Desktop newDesktop
 ```
 
-## mv
+# mv
 
 `m`o`v`e:
 
@@ -71,7 +65,7 @@ $ touch /tmp/somedir/file
 $ mv /tmp/somedir ~
 ```
 
-## file
+# file
 
 Let me show you something:
 
@@ -103,7 +97,7 @@ another: ASCII text
 
 Now we know we should open "some" with a multimedia player and "another" with a text editor.
 
-## Conclusion
+# Conclusion
 
 Compared to other chapters, this one was a relatively short one. The reason is that you have a knowledge base that makes things easier to grasp, so I don't need to explain as much as I did in the early chapters. If you're into dividing up this book, I can tell you that here is the end of our beginner's section. We'll be talking about more interesting stuff from here, like streams, processes and so on. Don't be intimidated by the names because they're really not a big deal. They're just less obvious because you may not have heard of such concepts before. For example, you always knew what copy meant and you just learned how to do it in the terminal, but for example when we talk about streams, you need to understand the concept first. I promise I make it as simple as possible, but don't expect to be seeing 2 + 2 = 5 :D Maybe a math joke to end this chapter with?
 

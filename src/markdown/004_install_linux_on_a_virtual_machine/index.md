@@ -1,9 +1,3 @@
----
-layout: post
-title: Chapter Four - Install Linux on a virtual machine
-pathToImage: ../../pic.jpg
----
-
 Let's install Linux, shall we? So go ahead and fire up your search engine and search for your favorite distribution. If you don't have a clue, watch the lessons 6 to 9 to see what desktop environment you like, so you'll download the distribution that offers you that desktop environment. Here I'm going to use the Ubuntu gnome. What you are going to download is an ISO file that can be used to burn USB/DVD or directly fed into virtualization software. So search for the official website of your distribution of choice and then navigate to the download page. You are looking for a desktop version or workstation. In the case of Ubuntu, you'll need to go to [ubuntu.com](http://ubuntu.com/), click on the "download" from the top bar and then "ubuntu desktop". The rest of the downloading process should be pretty straight forward. Meanwhile, you can download your virtualization program, you can use either of these two:
 
 - Virtualbox
@@ -11,7 +5,7 @@ Let's install Linux, shall we? So go ahead and fire up your search engine and se
 
 Choose either one that you're familiar with, or if not, just download the first. Here I'm going to use Virtualbox because it's easier to install on Linux and is also available on Mac (VMware player doesn't have a Mac version at the time of writing). So download the software and install it (I'm going to assume you know how to do that).
 
-## Creating the virtual machine
+# Creating the virtual machine
 
 1. Launch Virtualbox and click on the "New" button.
 1. Specify a name for your virtual machine (which doesn't matter at all).
@@ -25,7 +19,7 @@ Choose either one that you're familiar with, or if not, just download the first.
 1. Now we need to start it (do it).
 1. It'll ask you to put in a disk, here you would give it the address of that ISO file we downloaded before. Once you do, you'll notice that the setup begins.
 
-##  Install Ubuntu
+#  Install Ubuntu
 
 1. Now let's install Ubuntu as an example. On the first screen choose the default English as the language (if you're prompted).
 1. Then choose "try ubuntu" just to see how the live system looks exactly the same as an installation. It'll give you the login screen and you just need to hit enter twice (the password is blank). Now you have a live Linux just like we talked about in previous chapters. You can continue to explore it but in just a few seconds, we'll have the system installed, so just go ahead and double click the "Install Ubuntu" icon on the desktop.
@@ -40,7 +34,7 @@ Choose either one that you're familiar with, or if not, just download the first.
 
 Now that you have a Linux installed, it's time to mess with it :D this part is my favorite. The first time, I installed Linux I was in AW for that beautiful Ubuntu red-magenta color. So what I'm trying to say is that you should try out different parts of the newly installed system before continuing so that you'll get familiar with it. If you're not in a hurry, take your time and try to do the things you do on a regular basis in your new Linux OS, for example try the software application to get new software (try downloading vlc player and watching something in it). Just keep having fun with this new thing until you get bored of it. When you feel you need to learn more and see what it's capable of, then continue with the tutorial.
 
-## Conclusion
+# Conclusion
 
 The next chapter will be about the dual boot. So you should skip that and continue at the next one because that is just an alternative to what you just did. Take care until then :)
 

@@ -1,10 +1,4 @@
----
-layout: post
-title: Chapter Thirty two - User and group files
-pathToImage: ../../pic.jpg
----
-
-## /etc/passwd
+# /etc/passwd
 
 Go ahead and `less` the output and navigate to the end of the file:
 
@@ -25,7 +19,7 @@ What are we seeing here? First line is the format in which you'll see the info i
 
 In fact when you use the commands from the last chapter, you are modifying these files :D But you shouldn't do them by hand, it's not a good practice. Always use those commands for management.
 
-## /etc/group
+# /etc/group
 
 ```bash
 [Group name]:[Group password]:[GID]:[Group members]
@@ -37,7 +31,7 @@ adm:x:4:syslog,john
 - `GID`: Group ID
 - `Group members`: Comma separated users that are in this group
 
-## /etc/shadow
+# /etc/shadow
 
 Here is the user shadow file:
 
@@ -62,7 +56,7 @@ john:$6$cP3...fA3:18229:0:99999:7:::
 
 <p class="note">What is hashing? Hashing is the process of transforming a string of characters into a jibberish thing that doesn't reflect the password. This is a one way process, no one (mathematically) can transform the hash back into the original string. That's why we store passwords like that. How programs validate the password you might ask? They ask for a password, you enter one, they hash it again and compare it to the stored hashed password and if equal, they grant you with permissions. This way no one can know the password but it still works :)</p>
 
-## /etc/gshadow
+# /etc/gshadow
 
 The group shadow file:
 
@@ -72,7 +66,7 @@ The group shadow file:
 
 They are all self-explanatory so I won’t repeat myself.
 
-## Conclusion
+# Conclusion
 
 Yeap! That's it! Good enough :) Now you have a pretty good understanding of users and groups in Linux. Next lesson is going to be about `bash`! Yes, our shell, we will learn more about it.
 

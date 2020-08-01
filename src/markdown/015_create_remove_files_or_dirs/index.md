@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Fifteen - Create/Remove files or directories
-pathToImage: ../../pic.jpg
----
-
 Here we will learn how to actually do something effective. Let's start by learning to touch!
 
-## touch
+# touch
 
 What happens when you touch something? It gets changed. Maybe not visible to your eyes but on a microscopic scale, touching something definitely changes it. In Linux, when you touch something, it's timestamp gets changed. Meaning that it's modified date/time is updated. But the weird part is that if you touch something that doesn't exist, it will magically come into existence! Maybe my analogy made things worse, but you know, I can't help myself. Let's see it in action:
 
@@ -30,7 +24,7 @@ $ ls -l
 
 See? when `something` didn't exist, `touch` created a new empty file and named it `something`, but when it did exist, touch only updated the time (from 45 to 46).
 
-## rm
+# rm
 
 It's short for remove and it can be one of the most dangerous commands ever. This command (with certain options) can delete literally `EVERYTHING`. And by everything I don't just mean the operating system, it'll delete even the disks attached to your computer, or even network storage that's mounted somewhere. But first, let's use it in the most basic way possible:
 
@@ -107,7 +101,7 @@ $ sudo rm -rf /
 
 That will remove everything after you enter your password. Running the `rm -rf /` as `root` will do the same. So remember to avoid that command, you will never need to remove everything, even in that case you are better off formatting the disk to avoid removing mounted partitions. This command has become some sort of joke in the literature!
 
-## mkdir
+# mkdir
 
 `m`a`k`e `dir`ectory. Simply makes a directory:
 
@@ -132,7 +126,7 @@ a
 
 After removing all three (with `rm -r a`), try running it without the `-p` and you’ll see it complain.
 
-## rmdir
+# rmdir
 
 It's easy to guess that it's short for `r`e`m`ove `dir`ectory. But remember that `rm` deleted directories with files in them when passed the option `-r`? Then why would we want another command? Because `rmdir` removes only the empty directories. Run these commands to understand it:
 
@@ -145,7 +139,7 @@ $ rmdir iamnot
 rmdir: failed to remove 'iamnot': Directory not empty
 ```
 
-## Conclusion
+# Conclusion
 
 That wraps up this chapter, you learned important commands that will be necessary to have in your knowledge base. The next chapter will talk about copying, moving (or cutting) files but after that the more in-depth stuff will be coming up. So get excited :D you’re becoming a better Linux user chapter by chapter.
 

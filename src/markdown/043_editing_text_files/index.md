@@ -1,13 +1,7 @@
----
-layout: post
-title: Chapter Forty three - Editing text files
-pathToImage: ../../pic.jpg
----
+# nano
 
-## nano
+# Vim
 
-## Vim
+# Emacs
 
-## Emacs
-
-## Conclusion
+# Conclusion

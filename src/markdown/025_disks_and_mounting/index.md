@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty five - Disks and mounting
-pathToImage: ../../pic.jpg
----
-
 Consumer users may not need to learn how to work with disks but any decent user must have the basic understanding of how they work and how to manipulate them. In fact users who wish to be able to install distros like Arch or Gentoo must definitely be comfortable with disks as they need to do their partitioning themselves since these distros do not provide any guided partitioning tool to do it for them.
 
-## lsblk
+# lsblk
 
 `l`i`s`t `bl`oc`k` devices.
 
@@ -46,7 +40,7 @@ In Linux, disks are abstracted and presented in forms of abbreviations like `sda
 
 Obviously, you can see the size of disks and partitions in `lsblk`'s output, but another important field is the mountpoint. In the output of my own laptop's disks, you can see that I have my `sda1` encrypted partition mounted on `/home/john/mzd`. What I mean is that the partition is connected to the directory so that you can interact with the partition through that directory. You can think of the directory becoming the gateway of that partition. One can mount any partition on any desired directory (not literally because some directories are special for their own purpose). We will come back to this down below, but first, let's learn about two more commands that give us useful information.
 
-## df
+# df
 
 `df` displays the amount of disk space available on the file system. That’s what the man page said (or in Michael Scott’s words: that's what she said).
 
@@ -73,7 +67,7 @@ Filesystem                 Size  Used Avail Use% Mounted on
 I don't think that I should explain the above command, it is super self-explanatory, I think. Another useful option that `df` has is `-a` which stands for `a`ll. Just wanted to let you know you can check the man page if you want and just see how it lists some additional stuff!
 
 
-## du
+# du
 
 ```bash
 $ du
@@ -93,7 +87,7 @@ $ du -d 1 -h
 
 You may be angry that this has nothing to do with disks, and to be fair, you are right. But I didn't have anywhere else to tell you about this command, so please tolerate it :D But think about it this way, this command estimates the amount of disk usage each directory occupies, so I guess it somehow relates to disk :/ Anyway, a useful option that it has is the `-a` which lists files in addition to the directories.
 
-## mount and umount
+# mount and umount
 
 Let's first insert a USB disk to our computer. If you are using virtualization, which you probably are, then you need to do some extra stuff. If you’re not using virtualbox, skip to the `lsblk` command below. First, shutdown your VM if it’s running, then in virtualbox, select your VM and hit the `settings` button to open up your VM’s settings. Go to the `storage` section and then click on the little hard disk on the right of `Controller: SATA`. Then select the `create` button and follow the on screen instructions (just like when we created our VM) to make a hard disk for you VM (other than the current one). About 2G is enough. After creation select the `choose` button to complete the setup. Hit `ok` and start up your VM. Now we should create a partition (using a graphical tool). First run this command to install the tool:
 
@@ -168,7 +162,7 @@ brw-rw----  1 root   disk        8,   1 Mar  9 09:32 sda1
 
 See those `b`s at the beginning of the lines? That's for `b`lock devices which are these special disk files. All we need to know is that these are special files through which we can access disks.
 
-## dd
+# dd
 
 <p class="warning">DANGER! This command has the potential to delete everything. Please don't use it on real systems until you are comfortable with it.</p>
 
@@ -186,7 +180,7 @@ $ sudo dd if=/dev/sdb of=/path/to/file.iso
 
 Literally the reverse! Every single bit of the `sdb` disk is put into the `file.iso`. There is much more to `dd` but here is not the place for it. You can search for it yourself and learn the hell out of it. Just remember, don’t execute anything before understanding it.
 
-## Conclusion
+# Conclusion
 
 So this is pretty much it. Now you know how disks are listed and mounted. Later on, we will make partitions and talk more about filesystems, but for now, you're good to go :)
 

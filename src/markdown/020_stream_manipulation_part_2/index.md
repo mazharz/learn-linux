@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty - Stream manipulation part 2
-pathToImage: ../../pic.jpg
----
-
 Here we will see even more command line programs that give us even more power when working with streams. Let's dive right in.
 
-## nl
+# nl
 
 `n`umber `l`ines. The best way to understand it, is to use it:
 
@@ -20,7 +14,7 @@ $ cat file | nl
 
 It simply numbers the lines of a stream, and here you can easily see that we first printed the output of the file to the standard output and then passed that to `nl` so that it numbers the lines for us.
 
-## fmt
+# fmt
 
 If you've ever worked on a vertical screen or if you remember the old monitors with their square-shaped aspect ratios, you know that keeping lines in less than a certain length will improve the reading experience (if you're a programmer, you already should be familiar with this concept). `fmt` can help us force break lines when they exceed a certain character count. Copy this exact paragraph (this one, that you are reading right now and you're about to finish) and remove the line endings (make it a long one line text) and put it in a file, then:
 
@@ -33,7 +27,7 @@ if you remember the old monitors with their
 
 You can clearly see that the file's content (which was in a single line) is now broken into multiple ones. By default `fmt` will break on 75 characters but we can modify that just like we did above.
 
-## uniq
+# uniq
 
 This one speaks for itself as well.
 
@@ -49,7 +43,7 @@ $ cat file | uniq -c
 2 two
 ```
 
-## cut
+# cut
 
 This one is extremely helpful, useful, and beautiful. Is it obvious that I used it too much before or should I keep talking about it? Imagine that a file is composed of rows and columns just like spreadsheets, now `cut` helps us easily alter the columns whilst `grep` and others take care of the lines. Let's see some examples:
 
@@ -78,7 +72,7 @@ $ cat file | cut -d' ' -f2-4
 is just a
 ```
 
-## rev
+# rev
 
 You may think that the `rev`erse of something is not really useful, but it really is. Take a look at the basic usage of `rev` first:
 
@@ -108,7 +102,7 @@ First we reverse the string, then we cut from the second character to the end (p
 
 <p class="note">I wanted to talk about <code>tr</code> too, but I thought it was overkill for this book, if you're interested, take a look at some online resources or just the man page if you're feeling too adventurous.</p>
 
-## Conclusion
+# Conclusion
 
 Now I think you start to see the power we have over streams. I promise the next chapter will be our last on streams, I know you might be tired, but you’ll appreciate these stuff later on in your life.
 

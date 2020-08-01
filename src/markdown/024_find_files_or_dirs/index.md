@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty four - Find files and dirs
-pathToImage: ../../pic.jpg
----
-
 This is something we do almost everyday without noticing it. We open our file manager, start navigating and try our best to find what we're looking for. In command line, we have tools to do just this for us, because as you know, command line doesn't have an easy-to-understand interface and using `cd` and `ls` repeatedly is definitely a poor solution.
 
-## find
+# find
 
 Lucky for us, the command name is impossible to forget. So let's start with the most easy way to use it:
 
@@ -76,7 +70,7 @@ $ sudo find / -iname "*something*"
 
 First, I prepend `sudo` so `find` has all the permissions it needs to read the files and hence find them for me (we'll talk about `sudo` soon). Moreover, I use `-iname` so if there are upper-case letters in the name, `find` won't ignore them. And then the stars will make sure that find will `find` files containing that desired phrase for you (that sentence had too many “f” sounds).
 
-## locate
+# locate
 
 I don't know if you noticed or not, but `find` could take forever. To be honest that's understandable, since it has to scan every single file on the disk. What if we could have an indexed list of all the files so that we would read only a single source (which is way faster). Well that's exactly what `locate` does:
 
@@ -108,7 +102,7 @@ $
 
 We first update the database which `locate` uses, then we use `locate` again and this time, it works! Proving that I'm not lying. The most useful option here is the `-i` which makes locate ignore case (case-insensitive search).
 
-## Conclusion
+# Conclusion
 
 You may not use `find` and `locate` too much on a desktop machine and that's totally fine. But the moment you are left alone with a dark command-line-only server, you find yourself desperately trying to navigate back and forth to different locations and finding files. There, `find` will do you a favor. And `locate` is mostly useful for preventing an unnecessary high disk usage every time you try to find something. Use them both and spend some time with them because chances are, you will need them one day and that day you will thank yourself for preparing in advance. But that's not all. In fact, there's more. If you're feeling adventurous, you should try `fzf` and see what a beauty that is :) With that in mind, let's move on to the next chapter.
 

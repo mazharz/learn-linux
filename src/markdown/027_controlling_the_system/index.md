@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty seven - Controlling the system
-pathToImage: ../../pic.jpg
----
-
 This chapter's name may be a bit misleading. First because we control our system through different modules and programs and second because you may think that this is a big deal. Here you will learn a few basic system control commands.
 
-## hostname
+# hostname
 
 Simply executing it shows us the hostname (our computer's name):
 
@@ -39,7 +33,7 @@ You may notice that after a reboot, your hostname changes back to what it was be
 $ sudo hostnamectl set-hostname new-host-name
 ```
 
-## shutdown
+# shutdown
 
 Too self-explanatory name!
 
@@ -67,7 +61,7 @@ $ shutdown +0
 
 The first two commands will register a pending shutdown to occur in the time they are given. Third command is what used to happen in multi-user systems, the admin would tell the other users that s/he'll shutdown (reboot) in 15 minutes or so (other users received the message in their terminals). The fourth command will `c`ancel the pending shutdown command. Meaning that if you regret your scheduled shutdown, just execute a `shutdown -c` and it'll `c`ancel the shutdown event. And the last two commands are the same as executing shutdown with no time argument.
 
-## reboot
+# reboot
 
 Too lazy to type the whole `shutdown -r` ? There's a shortcut:
 
@@ -89,7 +83,7 @@ lrwxrwxrwx 1 root root 14 Feb  6 18:15 /usr/sbin/shutdown -> /bin/systemctl
 
 As you can see, they're both soft links to `systemctl` which is the system control command that `systemd` provides. We will see that in later chapters.
 
-## Conclusion
+# Conclusion
 
 As I promised this one was a simple, brief chapter :) See you in the next one.
 

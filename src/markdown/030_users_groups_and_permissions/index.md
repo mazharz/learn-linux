@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Thirty - Users, groups, and permissions
-pathToImage: ../../pic.jpg
----
-
 Remember I promised to talk about these stuff? Well now is the time to see what's all the fuss about. We will discuss users, groups and permission in this and the next two chapters. So let's dive in:
 
-## ls (again!)
+# ls (again!)
 
 We have been using `ls` for quite a long time and now is the time to understand the first weird column:
 
@@ -69,7 +63,7 @@ crw--w----  1 root   tty         5,   1 Mar 29 09:20 console
 
 Here the file belongs to the "root" user and the "tty" group. It is a "character device" file because of that "c" at the beginning of the line and it has read and write permissions for "root", only write permission for the users inside "tty" group and no permission for other users.
 
-## chmod
+# chmod
 
 `ch`ange file `mod`e bits! In human language, it means to change those permissions. So let's.
 
@@ -138,7 +132,7 @@ A very important option of chmod is `-R` which is short for `R`ecursive. Meaning
 
 <p class="warning">Warning: Never ever ever ever ever try to apply a permission on the root directory (or any other major directory) recursively. It's similar to <code>rm -rf /*</code>, it'll just ruin the whole system.</p>
 
-## chown
+# chown
 
 So let's change the ownership of files or directories.
 
@@ -168,7 +162,7 @@ Which will cause the file to be owned by "root" user and the "root" group as wel
 
 Note that we have `-R` for `chown` as well, so we can change the ownerships recursively.
 
-## sudo and su
+# sudo and su
 
 As we have said many times, we have regular users and one "root" user which is the most privileged user. Now that we are comfortable with the command line, it's time to be able to be ROOT! Generally, we want to prevent being root for several reasons. I'm not going to bore you with them but take the general idea that when you are God, you should be errorless. And from what we know, humans are definitely NOT errorless. We are indeed errorful in some circumstances, like when we declare an imaginary friend ;) But anyway, we generally tend to be regular users. But sometimes, we need to run commands as root, that is when "sudo" comes in. It may sound like a cool ninja, but unfortunately, it's not :( It's short for `s`uper `u`ser `do`. Whenever you want to execute a command with super user permissions, you just prepend it with a "sudo" just like we did a little before when we wanted to make the owner of a file "root". If you tried to change the owner to `root` without the "sudo", you'll notice that you couldn't, the reason being that a file that is owned by root (if it is a script or program) can cause serious damage just by being run. Let's run a simple command with `sudo`:
 
@@ -216,7 +210,7 @@ root@u6untu:/home/john# ls -l
 
 That right there is proof that we are in fact `root`! The newly created file's owner and group are both `root`. If you need even more proof, try the command below.
 
-## whoami
+# whoami
 
 Basically does what it's named for!
 
@@ -229,7 +223,7 @@ john@u6untu:~$ whoami
 john
 ```
 
-## id
+# id
 
 This one gives you the information on who you are:
 
@@ -243,7 +237,7 @@ uid=0(root) gid=0(root) groups=0(root)
 
 Notice how I just executed `sudo su` and I didn't give the `root` user as it’s argument? That's because `su` defaults to change to `root`.
 
-## groups
+# groups
 
 Wanna know what groups you belong to?
 
@@ -263,7 +257,7 @@ $ id root
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
-## Conclusion
+# Conclusion
 
 Phew! That was quite a lot of information in one chapter! Congratulations, you now are able to change permission, change ownership, switch users, execute commands as super user and query information about users. That is a huge step, you should be proud. In the next chapter, we will learn how to manage the users and groups which is another important skill to learn. I'm not going to lie to you, it'll be as informative as this one, so take a longer break before you jump in the next one.
 

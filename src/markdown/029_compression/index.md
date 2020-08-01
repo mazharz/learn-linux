@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Twenty nine - Compression
-pathToImage: ../../pic.jpg
----
-
 I have no doubt that you had used a compression program before. On windows, Winrar seems to be the most popular. In Linux, we have similar programs as well, those graphical compression utilities that your distribution provides are actually really good. I have never had a single problem with them. So why should we learn to do it in the command line? We shouldn't, but we can. We are going to learn them so we can be doing the same thing if we ever need to. Like when you want to backup your website's data on your server, or when you want to write a script that automatically zips a file or directory. So let's jump right in.
 
-## gzip
+# gzip
 
 We'll start with the most Linuxy (or unixy) one. You usually don't see this on Windows. So let's start by making a file.
 
@@ -72,7 +66,7 @@ gzip: dir is a directory -- ignored
 
 Hmmm! We seem to be having a problem. If you look at the man page, you'll see that it explicitly says that gzip compresses files, but doesn't say anything about directories. So what should we do?
 
-## tar
+# tar
 
 `tar` is an archiving utility, meaning it accumulates multiple files and directories into one file! So we can use `tar` to put them together and then compress the output of `tar`! I know, it seems ridiculous but please keep reading because it'll make more sense in a jiff!
 
@@ -137,7 +131,7 @@ drwxr-xr-x 2 john john 4096 Mar 27 13:52 dir
 
 This is the most common way to compress files and directories in Linux, but not the only way. In fact most files that a regular user deals with are in the form of `zip` and `rar` files. Surely we have tools to deal with those too:
 
-## zip
+# zip
 
 This is the most common type of compressed file among all operating systems, even the decent android file managers are capable of processing it. So let's begin:
 
@@ -228,7 +222,7 @@ $ tree
 2 directories, 3 files
 ```
 
-## rar
+# rar
 
 I almost always `unrar` stuff in contrast to `rar`ing them because I don't like rar as a compression utility, primarily due to it being a proprietary algorithm, which in this world (Linux) counts as a sucky solution. Anyway, to help discourage the use of `rar`, I will only show you the extraction commands. By the way, unrar is not installed by default on most distributions, so you have to do this if you're on ubuntu:
 
@@ -247,7 +241,7 @@ $ unrar x archive.rar
 
 The first one (`l`) will list the content of the archive file. Second, will extract files, but it doesn't keep the directory structure, meaning that if you had a directory in the archive with two files in it, the files won't be in the directory when extracted. In fact there wouldn't even be a directory extracted at all! So to keep the directory structure, you should use the `x` option instead.
 
-## The other ones
+# The other ones
 
 There are many more compression algorithms and tools, but should we learn them all right now? Of course not! Whenever (if ever) we need them, we can easily search on the internet or even look at their man pages to see how they work. And usually, it's really simple and easy. But if you're too eager to learn, you can search for these commands:
 
@@ -255,7 +249,7 @@ There are many more compression algorithms and tools, but should we learn them a
 - `7zip`
 - `xz`
 
-## Conclusion
+# Conclusion
 
 Good enough! Let's move on to more important stuff, namely users, groups and permissions!!!
 

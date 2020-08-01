@@ -1,12 +1,6 @@
----
-layout: post
-title: Chapter Thirty one - User and group management
-pathToImage: ../../pic.jpg
----
-
 Time to learn this. To be honest, this is not needed that much since most distributions have some user and group management embedded in them (sometimes, you install a program that needs some special permissions so a group is created with those permissions and your user will be part of that group so you can use that specific program properly). BUT here is the but: You will need to learn this if you plan to use something like arch linux (which won't do that for you), or if you install something outside your package manager, you often need to handle these manually.
 
-## Let's add a new user
+# Let's add a new user
 
 We have two commands to do so, `useradd` and `adduser`. Some distributions don't provide `adduser`, the reason is that `adduser` is just a front-end for the other. So here, we won't use it, instead we learn the more important main programs.
 
@@ -57,7 +51,7 @@ The first is obviously setting a home for that user in the `/home` directory. In
 
 <p class="note">Note for curious ones: There is a command which I won't demonstrate. It's name is <code>chpasswd</code> which sets the passwords of users in batches. This isn't useful for normal users but it's a time saver for system administrators.</p>
 
-## Let's modify that user
+# Let's modify that user
 
 Now that `someone` has no home, we should help him. So let's make a directory in `/home` like this:
 
@@ -88,7 +82,7 @@ $ sudo usermod --shell /bin/bash someone
 
 First, we change the directory ownership (because we used `sudo` to create it, it is owned by `root`). Then we assign it to `someone` and we change our user to it and finally we prove that it is assigned by going home (`~`). While we're at it, let's change the shell to `bash` for our own good. We do that in the last command above. By default, `useradd` sets the shell to `/bin/sh` which is a symbolic link to `dash` shell (on debian-based distros). Now you can even log out of your desktop and then you will have two users, you can login with `someone` BUT you won't be able to use `sudo` anymore. So re-login using the `john` (john is my VM’s default user, yours may be different) user after you test it. Why won't you be able to use `sudo`?
 
-## sudoers!
+# sudoers!
 
 There are those who are trustworthy and those who are not. Because we own our computer, are we the most trustworthy? No, `root` is the most trustworthy because she knows much more and does much more for our benefit. After `root`, we are the most trustworthy. Distributions know that and pre-configure our operating system so that we are able to use `sudo` by default. But if we want to add our own user and trust him, we should explicitly say so. How?
 
@@ -146,7 +140,7 @@ You can use `Ctrl+d` or `exit` to go back to your regular user.
 
 <p class="note">Note: you may be wondering why our regular user (<code>john</code> in my case) has <code>sudo</code> permissions but isn't in the sudoers file. That is because <code>john</code> is in the group .... guess it. Hint: look above when we saw the original content of the sudoers file. Go ahead and use your knowledge from the previous chapter to figure out which groups <code>john</code> belongs to. (answer: the group "sudo").</p>
 
-## Let's add a new group
+# Let's add a new group
 
 ```bash
 $ sudo groupadd somegroup
@@ -173,7 +167,7 @@ someone : somegroup sudo
 
 Why on earth would we use another command when we can use just our dear `usermod` command? Because gpasswd doesn't replace the groups, it just adds to them. But using `usermod` we should provide all groups we want the user to belong to (which is tedious).
 
-## Wanna change a group's name?
+# Wanna change a group's name?
 
 ```bash
 $ sudo groupmod -n bettername somegroup
@@ -181,7 +175,7 @@ $ groups someone
 someone : bettername sudo
 ```
 
-## Wanna remove a user or group?
+# Wanna remove a user or group?
 
 ```bash
 $ sudo userdel someone
@@ -217,7 +211,7 @@ You will see that in both files, both the user and the group are deleted. So rem
 - When using `usermod` to change the groups of a user, it overwrites it all. So you are better off using `gpasswd` instead
 - If you replace a user's initial group (which has the same name), it will not be deleted because it is no longer the primary group to which the user belongs to
 
-## Conclusion
+# Conclusion
 
 Obviously, there are more to users and groups, but this is enough for a regular user, in fact it's more than enough. So we call this a `good enough` point at which we can stop. The next lesson will be about the files and how users and groups are stored in the operating system.
 

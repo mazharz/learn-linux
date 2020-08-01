@@ -1,12 +1,7 @@
----
-layout: post
-title: Chapter Fourteen - List files and directories
-pathToImage: ../../pic.jpg
----
-
 A fundamental feature of a file manager is that it shows you what files and directories are where you are. In the command line, similarly, we can list those files and directories. Let's learn to do that.
 
-## ls
+# 
+ls
 
 `l`i`s`t! Open a terminal and execute it without any arguments:
 
@@ -151,7 +146,8 @@ total 3.3M
 -rw-r--r-- 1 john john 3.3M Nov 14 21:04  file.mp3
 ```
 
-## tree
+# 
+tree
 
 This program is not installed by default but we can install it easily. Just execute the command below and don't worry about it because we'll learn what it does later (this works on debian-based distros):
 
@@ -191,6 +187,6 @@ $ tree -L 2 /
 
 See? how easy it is to learn command line options and programs? This `tree` command will be helpful when you're trying to make sense of the structure of nested directories.
 
-## Conclusion
+# Conclusion
 
 In this lesson we learned that we can list files or directories in the terminal just as we can see them in a file manager. That's it for now :)

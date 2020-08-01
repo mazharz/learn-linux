@@ -1,16 +1,10 @@
----
-layout: post
-title: Chapter Eleven - History and manual
-pathToImage: ../../pic.jpg
----
-
 Ready to learn more? I would like to give you a bit of information on command line applications first.
 
-## What's a command?
+# What's a command?
 
 A command is either a program or a script (technically there are other stuff but not important here). A program is written in one of the programming languages (there are like hundreds of them) and then compiled into a binary file to be executed by the machine. On the other hand, a script is a file containing instructions which are translated into binary when run. So all in all, command is some sort of software that can be called to be executed. Calling a program is as simple as typing it's name in front of the prompt.
 
-## What is an argument?
+# What is an argument?
 
 It means additional data (options) that we pass to the command to customize it's behavior. Passing arguments in bash shell is as simple as writing the desired options after the command (with a space separating them). Take a look at this example:
 
@@ -20,7 +14,7 @@ $ command argument another-argument
 
 Here we've passed two arguments to our command. Now that we know the basics, let's start actually seeing these in action.
 
-## history
+# history
 
 history is a command that tells us what commands were executed in bash. To see that it actually does that, run some nonsense commands like this:
 
@@ -54,7 +48,7 @@ Now before I go on to the next topic, I got to show you one more interesting fea
 
 <p class="note">If you’re curious about the "control+s" thing, it pauses the output of the terminal. Why? You see, in vintage ages, there weren’t any graphical interfaces. So people needed to stop the output for a moment in order to inspect it (using "shift+page up" or "shift+page down"). If you ever get stuck in that paused mode, use "control+q" to get out of it.</p>
 
-## man
+# man
 
 This command is what you'll be using for the rest of your life, without a doubt. It's short for manual. Basically any decent command line program should have a man page describing the use of it. Let's see it in action:
 
@@ -112,7 +106,7 @@ $ apropos something
 
 Now, whenever I fail to give you a good description of a command, or you're just told to run a command you don't know, just check the man page to figure out what it is and how you should be using it. But sometimes, this isn't possible, some commands don't have a man page! What should we do then?
 
-## -h and --help
+# -h and --help
 
 These two options are usually (not always though) “help” in command line programs or scripts. For example, type this:
 
@@ -126,7 +120,7 @@ You'll notice that some sort of help is printed in your terminal window showing 
 $ man --help
 ```
 
-## What if even those two aren’t available?
+# What if even those two aren’t available?
 
 In some extremely rare cases, you’ll notice that there is no man page, no `-h` and even no `--help`! In these situations, go ahead and first search for a man page or a documentation online (use your beloved search engine) and if that fails too, then you should do the following:
 
@@ -140,7 +134,7 @@ In some extremely rare cases, you’ll notice that there is no man page, no `-h`
 
 <p class="note">Note that the situation above is extremely rare and chances are that you’ll never experience it, but you should be informed at least once.</p>
 
-## Conclusion
+# Conclusion
 
 This lesson was mostly teaching you how to get information when you're lost. Some sort of teaching you how to catch a fish, instead of catching one for you! Whenever you're feeling lost about something, refer to man pages and refresh your memory. Hell! nobody remembers all these commands and options that they've got. But you need to get familiar with some of them to be able to search for what you need. For instance here you learned that man gives you information. From now on, all I will do is to give you a taste of the most important commands that you'll need to know about along with the concepts that you need in order to understand them. I can never cover all the options and arguments, we will only dip our toes in the ocean of possibilities. So I'll hope to see you in the next lesson with a lot more energy and a smile on your face. I mean, I can't see you, but you know... :/
 
