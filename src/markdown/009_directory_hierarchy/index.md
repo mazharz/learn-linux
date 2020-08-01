@@ -8,7 +8,7 @@ Here we are, finally starting to learn Linux. By now you should have a Linux ins
 
 A normal forward slash, in Linux, is called `root`. In Linux, everything is placed in a tree structure. Compare this to Windows' directory hierarchy in the figure below:
 
-![An image representing Linux directory hierarchy](./directory_hierarchy.svg)
+![An image representing Linux directory hierarchy](/images/009_directory_hierarchy/directory_hierarchy.svg)
 
 Everything is in root. Note that a slash doesn't mean root EVERYWHERE. A slash is used to divide the name of nested directories. For instance, `a/b` means that there is a directory called `a` which has another directory inside it, called `b`. But in this phrase: `/a/b` the first slash means root. This means there is a directory named `a` inside root, which itself holds another directory called `b`. Note that `b` in both examples can be a file too, but i just thought i simplify which i now regret because i had to describe this additional sentence :D Now let's see what directories are in this root of ours.
 

@@ -31,7 +31,7 @@
 }
 
 .chapter p {
-  margin: 0rem 0rem 1rem .7rem;
+  margin: 0rem 0rem 1rem 0rem;
   text-indent: .7rem;
 }
 
@@ -42,6 +42,17 @@
 }
 .chapter .note::before {
   content: "Note: ";
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.chapter .warning {
+  border: 5px dotted var(--accent);
+  border-radius: 2rem;
+  padding: 1.2rem 1.5rem;
+}
+.chapter .warning::before {
+  content: "Warning: ";
   color: var(--accent);
   font-weight: bold;
 }
@@ -70,10 +81,10 @@
 }
 
 .chapter ul {
-  margin: 0rem 0rem 1rem 2.7rem;
+  margin: 0rem 0rem 1rem 2rem;
 }
 .chapter ol {
-  margin: 0rem 0rem 1rem 2.7rem;
+  margin: 0rem 0rem 1rem 2rem;
 }
 
 .chapter li {
@@ -85,13 +96,22 @@
   padding: 1rem;
   border: 5px solid var(--accent);
   font-family: RobotoMono;
+  overflow-x: auto;
 }
 
 .chapter pre code {
   font-family: RobotoMono;
+  color: var(--foreground);
 }
 
-.chapter p code {
+.chapter code {
   color: var(--accent);
   font-family: RobotoMono;
+}
+
+.chapter img {
+  filter: var(--image-filter);
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
 }

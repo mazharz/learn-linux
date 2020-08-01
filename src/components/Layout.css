@@ -3,6 +3,7 @@
   --background: #333;
   --accent: #c72c41;
   --alt: #e77a76;
+  --image-filter: invert(100%) contrast(80%);
   background-color: var(--background);
   color: var(--foreground);
 }
