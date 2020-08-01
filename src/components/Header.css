@@ -1,0 +1,52 @@
+.header {
+  border-bottom: 5px dotted var(--accent);
+}
+
+.header__inner {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__links {
+  display: flex;
+}
+
+.theme {
+  position: relative;
+}
+
+.theme__options {
+  position: absolute;
+  top: 80px;
+  right: 50%;
+  display: flex;
+  min-width: 150px;
+  background-color: var(--background);
+  border: 5px solid var(--accent);
+  flex-direction: column;
+  align-items: center;
+  transform: translate(50%, 0);
+}
+
+.theme__button,
+.theme__option {
+  color: var(--accent);
+  background: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  transition: all 0.3s ease-out;
+  margin: 10px 0px;
+}
+
+.theme__button:hover,
+.theme__button:active,
+.theme__option:hover,
+.theme__option:active {
+  text-shadow: 0 0 10px var(--accent);
+}

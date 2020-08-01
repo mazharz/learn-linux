@@ -5,17 +5,30 @@
   border: 2px solid var(--accent);
   border-radius: 2rem;
   padding: 1rem 2rem;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   margin: 10px 0px;
 }
 
 .link:hover,
 .link:active {
-  /* text-shadow: 0 0 5px var(--accent); */
   box-shadow: 0 0 50px var(--accent), inset 0 0 50px var(--accent);
 }
 
 .link:visited {
   color: var(--alt);
   border: 2px solid var(--alt);
+}
+
+.link--nav {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  transition: all 0.3s ease-out;
+  margin: 10px 0px;
+}
+
+.link--nav:hover,
+.link--nav:active {
+  text-shadow: 0 0 10px var(--accent);
 }

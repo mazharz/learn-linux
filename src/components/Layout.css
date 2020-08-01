@@ -1,6 +1,20 @@
 .layout {
+  /* pretty useless i reckon! */
+}
+
+.red-dark {
   --foreground: #eee;
   --background: #333;
+  --accent: #c72c41;
+  --alt: #e77a76;
+  --image-filter: invert(100%) contrast(80%);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.red-light {
+  --foreground: #333;
+  --background: #eee;
   --accent: #c72c41;
   --alt: #e77a76;
   --image-filter: invert(100%) contrast(80%);
