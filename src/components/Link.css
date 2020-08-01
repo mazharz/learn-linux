@@ -16,6 +16,6 @@
 }
 
 .link:visited {
-  color: var(--foreground);
-  border: 2px solid var(--foreground);
+  color: var(--alt);
+  border: 2px solid var(--alt);
 }

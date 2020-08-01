@@ -1,8 +1,7 @@
 There are two kinds of human beings, those who know what Linux is and those who don't. The latter thinks that Linux is an operating system! Yes, that's right, Linux is not an operating system, it's just a kernel. I think this is complicated enough for you to stop reading this book :) But don't worry, you're gonna learn what a kernel is in just a few seconds.
 
 # What is a kernel?
-> The kernel is a computer program that is the core of a computer's operating system, with complete control over everything in the system.
-- Wikipedia
+> The kernel is a computer program that is the core of a computer's operating system, with complete control over everything in the system. - Wikipedia
 
 Not surprisingly, our dear friend Wikipedia is right (like I'm one to tell otherwise). Think of the kernel as a mom in the household. She controls everything, the flow of life. A kernel handles resources like CPU or RAM and assigns them to the programs that need them. Take a look at the list below:
 
@@ -19,8 +18,7 @@ What I mean by this list is that hardware is the bottommost layer in a computer,
 
 Now I can tell you that the operating system includes a kernel and a bunch of other system programs.
 
-> An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs.
-- Wikipedia
+> An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. - Wikipedia
 
 Our friend, wiki, uses "common services" to describe those system programs that I just talked about. These are usually those background services that we don't really know about that much :) Let's introduce our next guest, GNU!
 

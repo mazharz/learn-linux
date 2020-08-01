@@ -2,6 +2,7 @@
   --foreground: #eee;
   --background: #333;
   --accent: #c72c41;
+  --alt: #e77a76;
   background-color: var(--background);
   color: var(--foreground);
 }

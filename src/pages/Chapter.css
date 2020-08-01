@@ -1,10 +1,90 @@
 .chapter {
-  color:  var(--foreground);
+  color: var(--foreground);
   background-color: var(--background);
   max-width: 780px;
   margin: 0 auto;
+  padding: 5rem 0px;
+}
+
+.chapter__title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--accent);
+  text-align: center;
+  margin: 0rem 0rem 2rem;
+}
+
+.chapter h1 {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin: 1.7rem 0rem .9rem;
+  padding: .5rem .7rem;
+  border-bottom: 5px dotted var(--accent);
+}
+
+.chapter h2 {
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin: 1.5rem 0rem .7rem;
+  padding: .5rem .7rem;
 }
 
 .chapter p {
-  margin-bottom: 1rem;
+  margin: 0rem 0rem 1rem .7rem;
+  text-indent: .7rem;
+}
+
+.chapter .note {
+  border: 5px dotted var(--accent);
+  border-radius: 2rem;
+  padding: 1.2rem 1.5rem;
+}
+.chapter .note::before {
+  content: "Note: ";
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.chapter blockquote p {
+  padding: .5rem 1rem;
+  border-left: 5px solid var(--accent);
+}
+.chapter blockquote p::before {
+  content: "\"";
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+.chapter blockquote p::after {
+  content: "\"";
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.chapter a {
+  text-decoration: none;
+  color: var(--accent);
+}
+.chapter a:hover,
+.chapter a:active {
+  text-shadow: 0 0 10px var(--accent);
+}
+.chapter a:visited {
+  color: var(--alt);
+}
+
+.chapter ul {
+  margin: 0rem 0rem 1rem 2.7rem;
+}
+.chapter ol {
+  margin: 0rem 0rem 1rem 2.7rem;
+}
+
+.chapter li {
+  padding: .4rem 0;
+}
+
+.chapter pre {
+  margin: 0rem 0rem 1rem .7rem;
+  padding: 1rem;
+  border: 5px solid var(--accent);
 }

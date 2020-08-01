@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import marked from "marked";
 
 import Layout from "../components/Layout";
-import Link from "../components/Link";
 
 import "./Chapter.css";
 
@@ -11,13 +10,13 @@ import data from "../data";
 
 function Chapter() {
   const [chapterHtml, setChapterHtml] = useState(null);
+  const [chapterTitle, setChapterTitle] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
     const urlName = location.pathname.split("/")[2];
-    console.log(urlName);
     const chapterName = data.filter((chapter) => chapter.url === urlName);
-    console.log(chapterName)
+    setChapterTitle(chapterName[0]);
     const chapterMarkdown = require("../markdown/" + chapterName[0].file);
 
     fetch(chapterMarkdown)
@@ -27,11 +26,12 @@ function Chapter() {
       .then((text) => {
         setChapterHtml({ markdown: marked(text) });
       });
-  }, []);
+  }, [location.pathname]);
 
   return (
     <Layout>
       <div className="chapter">
+        {chapterTitle ? <div className="chapter__title">{chapterTitle.name}</div> : null}
         {chapterHtml ? (
           <article
             dangerouslySetInnerHTML={{ __html: chapterHtml.markdown }}
