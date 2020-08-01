@@ -5,7 +5,7 @@ import Header from "./Header";
 import "./Layout.css";
 
 function Layout({ children }) {
-  const [theme, setTheme] = useState("red-dark");
+  const [theme, setTheme] = useState("");
 
   useEffect(() => {
     const localStorage = window.localStorage;
@@ -17,9 +17,15 @@ function Layout({ children }) {
     }
   }, []);
 
+  function setThemeFromHeader(theme) {
+    setTheme(theme);
+    const localStorage = window.localStorage;
+    localStorage.setItem("theme", theme);
+  }
+
   return (
     <div className={`layout ${theme}`}>
-      <Header setTheme={(theme) => setTheme(theme)} />
+      <Header setTheme={setThemeFromHeader} />
       {children}
     </div>
   );

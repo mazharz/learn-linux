@@ -17,7 +17,53 @@
   --background: #eee;
   --accent: #c72c41;
   --alt: #e77a76;
+  --image-filter: contrast(80%);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.green-dark {
+  --foreground: #eee;
+  --background: #333;
+  --accent: #207561;
+  --alt: #589167;
   --image-filter: invert(100%) contrast(80%);
   background-color: var(--background);
   color: var(--foreground);
+}
+
+.green-light {
+  --foreground: #333;
+  --background: #eee;
+  --accent: #207561;
+  --alt: #589167;
+  --image-filter: contrast(80%);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.blue-dark {
+  --foreground: #eee;
+  --background: #333;
+  --accent: #3282b8;
+  --alt: #0f4c75;
+  --image-filter: invert(100%) contrast(80%);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.blue-light {
+  --foreground: #333;
+  --background: #eee;
+  --accent: #3282b8;
+  --alt: #0f4c75;
+  --image-filter: contrast(80%);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+html,
+body,
+#root {
+  background-color: var(--background);
 }

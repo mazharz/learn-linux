@@ -1,7 +1,11 @@
 const config = {
   themes: [
     "red-dark",
-    "red-light"
+    "red-light",
+    "green-dark",
+    "green-light",
+    "blue-dark",
+    "blue-light",
   ]
 }
 

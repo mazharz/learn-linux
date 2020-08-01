@@ -13,11 +13,6 @@ function Header({ setTheme }) {
     setIsThemeMenuShown(!isThemeMenuShown);
   }
 
-  // function setTheme(event) {
-  //   const localStorage = window.localStorage;
-  //   localStorage.setItem("theme", event.target.innerHTML);
-  // }
-
   return (
     <header className="header">
       <div className="header__inner">
