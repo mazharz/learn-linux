@@ -14,3 +14,8 @@
   /* text-shadow: 0 0 5px var(--accent); */
   box-shadow: 0 0 50px var(--accent), inset 0 0 50px var(--accent);
 }
+
+.link:visited {
+  color: var(--foreground);
+  border: 2px solid var(--foreground);
+}
