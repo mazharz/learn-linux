@@ -4,6 +4,7 @@
   max-width: 780px;
   margin: 0 auto;
   padding: 5rem 0px;
+  min-height: 100vh;
 }
 
 .chapter__title {
@@ -51,13 +52,9 @@
 }
 .chapter blockquote p::before {
   content: "\"";
-  font-size: 1.5rem;
-  color: var(--accent);
 }
 .chapter blockquote p::after {
   content: "\"";
-  font-size: 1.5rem;
-  color: var(--accent);
 }
 
 .chapter a {
@@ -87,4 +84,14 @@
   margin: 0rem 0rem 1rem .7rem;
   padding: 1rem;
   border: 5px solid var(--accent);
+  font-family: RobotoMono;
+}
+
+.chapter pre code {
+  font-family: RobotoMono;
+}
+
+.chapter p code {
+  color: var(--accent);
+  font-family: RobotoMono;
 }

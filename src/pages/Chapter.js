@@ -24,6 +24,7 @@ function Chapter() {
         return response.text();
       })
       .then((text) => {
+        marked.setOptions({ gfm: true });
         setChapterHtml({ markdown: marked(text) });
       });
   }, [location.pathname]);
@@ -31,7 +32,9 @@ function Chapter() {
   return (
     <Layout>
       <div className="chapter">
-        {chapterTitle ? <div className="chapter__title">{chapterTitle.name}</div> : null}
+        {chapterTitle ? (
+          <div className="chapter__title">{chapterTitle.name}</div>
+        ) : null}
         {chapterHtml ? (
           <article
             dangerouslySetInnerHTML={{ __html: chapterHtml.markdown }}

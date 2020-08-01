@@ -70,7 +70,7 @@ That means you are using a regular user. If you were using the root user, it wou
 root@hostname:/home/username#
 ```
 
-I'm not telling you how to become root yet, because you should learn which are the dangerous commands before gaining full control. Right before that prompt character ($ or #) is the directory you are in. Shell, just like a file manager, is always in a directory. When you start it, it's in your user's home by default. A user's home is illustrated by the tilde character (~). But other user's homes are not shown like that, take the example above when I changed my user to root whilst staying in the same directory (`username`'s home directory) you can clearly see that it changed from `~` to `/home/username`. The rest of that prompt is self-explanatory. The user's name comes at the beginning and after an @ comes the host's name (computer's name).
+I'm not telling you how to become root yet, because you should learn which are the dangerous commands before gaining full control. Right before that prompt character ($ or #) is the directory you are in. Shell, just like a file manager, is always in a directory. When you start it, it's in your user's home by default. A user's home is illustrated by the tilde character (`~`). But other user's homes are not shown like that, take the example above when I changed my user to root whilst staying in the same directory (`username`'s home directory) you can clearly see that it changed from `~` to `/home/username`. The rest of that prompt is self-explanatory. The user's name comes at the beginning and after an @ comes the host's name (computer's name).
 
 # Some essentials
 

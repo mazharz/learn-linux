@@ -46,7 +46,7 @@ const data = [
     url: "command-lin-introduction",
     file: "010_commandline_introduction/index.md",
   },
-  { name: "History and manual", file: "011_history_and_manaual/index.md" },
+  { name: "History and manual", url: "history-and-manual", file: "011_history_and_manaual/index.md" },
   {
     name: "Print and view file content",
     url: "print-and-view-file-content",
