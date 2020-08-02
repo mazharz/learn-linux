@@ -10,10 +10,10 @@ function Layout({ children }) {
   useEffect(() => {
     const localStorage = window.localStorage;
     const currentTheme = localStorage.getItem("theme");
-    if(currentTheme) {
+    if (currentTheme) {
       setTheme(currentTheme);
     } else {
-      localStorage.setItem("theme", theme);
+      localStorage.setItem("theme", "red-dark");
     }
   }, []);
 

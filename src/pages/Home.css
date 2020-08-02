@@ -1,10 +1,11 @@
 .home {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3rem 0;
+  flex-grow: 1;
 }
 
 .home__paragraph {

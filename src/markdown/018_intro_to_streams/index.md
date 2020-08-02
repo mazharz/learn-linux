@@ -1,6 +1,6 @@
 Think of rivers. They're streams of water flowing through the earth. Streams in Linux can be thought of in the same way. But we have different types of streams:
 
-![Figure of streams](/images/018_intro_to_streams/streams.svg)
+![Figure of streams](/learn-linux/images/streams.svg)
 
 A program can receive some input, process it then produce some output or in case of error, report some error. Let's begin by the very basics of streams:
 

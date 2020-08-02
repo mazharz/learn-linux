@@ -10,7 +10,7 @@ function Home() {
     <Layout>
       <div className="home">
         <p className="home__paragraph">
-          Hi. Welcome to "I wanna learn Linux". This is a tutorial for beginners
+          Hi. Welcome to "Learn Linux". This is a tutorial for beginners
           so that they can start leraning Linux. It is 100% free and you can
           even copy and share it elsewhere because first, I don't intend to make
           money out of this and second, the whole purpose of this is to be a

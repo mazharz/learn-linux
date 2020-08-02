@@ -4,7 +4,6 @@
   max-width: 780px;
   margin: 0 auto;
   padding: 3rem 0px;
-  min-height: 100vh;
 }
 
 @media(max-width: 830px) {
