@@ -1,7 +1,5 @@
 Remember the chapter where we mounted partitions? Well now we can create those partitions and talk even more about disks and how they work. To be able to follow this chapter, you need a disk to be working with, if you are using Linux on a physical machine that could be achieved by inserting a flash drive into your computer but if on the other hand, you’re using a virtual machine, you need to make a virtual disk. We already did that too in the aforementioned chapter, so go ahead and get your setup ready.
 
-# Partition Table
-
 We can have a certain number of disks in our computers. If you open a computer case, you can actually see the disks attached usually to the SATA interfaces (newer fun SDDs may be connected via PCIe slots). These are actual physical devices. But due to different reasons, we may want to divide up these disks into smaller sections. These sections are called partitions. You usually see them as "drives" in a Windows machine. In order to be able to make partitions and use them, we need something called a partition table.
 
 # Partition Table
@@ -14,6 +12,7 @@ annoying and causes your disks to be complicated for no good reason (of course, 
 There are a bunch of partitioning programs that we can use to manage our partitions:
 
 - `gparted` (graphical front-end to `parted`)
+- `parted`
 - `fdisk`
 - `gdisk`
 - `cfdisk`
@@ -151,7 +150,7 @@ $ sudo mount /dev/sdb1 /mnt
 mount: /mnt: wrong fs type, bad option, bad superblock on /dev/sdb1, missing codepage or helper program, or other error.
 ```
 
-That's because we haven't make a filesystem on it :D (in Windows terms, we haven't formatted it yet). So let's!
+That's because we didn't make a filesystem on it :D (in Windows terms, we haven't formatted it yet). So let's!
 
 # Making a Filesystem
 
@@ -195,7 +194,7 @@ And that's it. We have our brand new partition with it's fancy new filesystem. L
 
 ```bash
 $ sudo mount /dev/sdb1 /mnt
-[john@localhost ~]$ lsblk
+$ lsblk
 NAME                            MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda                               8:0    0  20G  0 disk 
 ...
@@ -214,10 +213,10 @@ $ sudo file -sL /dev/sdb1
 /dev/sdb1: Linux rev 1.0 ext4 filesystem data, UUID=ae3b5d11-e70f-4647-92d0-618105c3edab (extents) (64bit) (large files) (huge files)
 ```
 
-So we figured it out, this is an `ext4` parition (we knew that but what if we didn't make it in the first place?). Now we can use the appropriate fsck tool (it also auto detects, but I wanted to do it the hard way so you learn to use `file` on special files):
+So we figured it out, this is an `ext4` parition (we knew that but what if we didn't make the partition in the first place?). Now we can use the appropriate fsck tool (it also auto detects, but I wanted to do it the hard way so you learn to use `file` on special files):
 
 ```bash
-$ sudo sudo fsck.ext4 /dev/sdb1
+$ sudo fsck.ext4 /dev/sdb1
 e2fsck 1.45.5 (07-Jan-2020)
 /dev/sdb1: clean, 11/262144 files, 36942/1048315 blocks
 ```
