@@ -1,9 +1,8 @@
 .chapters {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 2rem;
+  margin: 0 2rem;
   background-color: var(--background);
   padding: 3rem 0;
   text-align: center;
@@ -12,5 +11,7 @@
 @media(max-width: 830px) {
   .chapters {
     margin: 0 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 }
