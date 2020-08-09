@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb603e9bbb0b29e2c8d9489c77157fa8",
+    "revision": "2e1a6d44a1bad8e740be4f9db97b8e0c",
     "url": "/learn-linux/index.html"
   },
   {
-    "revision": "f2b82cf09f809717c6e5",
+    "revision": "9fa96e70731c85b92ee9",
     "url": "/learn-linux/static/css/main.5121748c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learn-linux/static/js/2.cb6f4a5e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f2b82cf09f809717c6e5",
-    "url": "/learn-linux/static/js/main.5c9c2a41.chunk.js"
+    "revision": "9fa96e70731c85b92ee9",
+    "url": "/learn-linux/static/js/main.a4f8e07e.chunk.js"
   },
   {
     "revision": "e12295658e57e79b37ec",
@@ -150,6 +150,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "89fb9f14b0cbb4d9584454060bf99afc",
     "url": "/learn-linux/static/media/index.89fb9f14.md"
+  },
+  {
+    "revision": "8a45ae43fe99233795d1ebc169f6b084",
+    "url": "/learn-linux/static/media/index.8a45ae43.md"
   },
   {
     "revision": "91723dd1a5bcc0a3cb66daa691cc5930",
