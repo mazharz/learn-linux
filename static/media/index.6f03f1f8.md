@@ -39,7 +39,7 @@ Always make sure to check the validity of such repositories if you want to be sa
 
 # Updating
 
-Here in `apt`land, update doesn't mean update, it means updating the metadata (remember the previous chapter where we talked about metadata? Oh... good times :P). So you would run this:
+Update doesn't mean update, it means updating the metadata (remember the previous chapter where we talked about metadata? Oh... good times :P). So you would run this:
 
 ```bash
 $ sudo apt update
