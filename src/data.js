@@ -46,7 +46,11 @@ const data = [
     url: "command-lin-introduction",
     file: "010_commandline_introduction/index.md",
   },
-  { name: "History and manual", url: "history-and-manual", file: "011_history_and_manaual/index.md" },
+  {
+    name: "History and manual",
+    url: "history-and-manual",
+    file: "011_history_and_manaual/index.md",
+  },
   {
     name: "Print and view file content",
     url: "print-and-view-file-content",
@@ -170,7 +174,7 @@ const data = [
     file: "037_intro_to_package_management/index.md",
   },
   { name: "apt", url: "apt", file: "038_apt/index.md" },
-  { name: "rpm and dnf", url: "rpm-and-dnf", file: "039_rpm_and_dnf/index.md" },
+  { name: "dnf", url: "dnf", file: "039_dnf/index.md" },
   { name: "pacman", url: "pacman", file: "040_pacman/index.md" },
   { name: "systemd", url: "systemd", file: "041_systemd/index.md" },
   { name: "regex", url: "regex", file: "042_regex/index.md" },
