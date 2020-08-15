@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/learn-linux/static/css/main.5121748c.chunk.css",
-    "main.js": "/learn-linux/static/js/main.a4f8e07e.chunk.js",
-    "main.js.map": "/learn-linux/static/js/main.a4f8e07e.chunk.js.map",
+    "main.css": "/learn-linux/static/css/main.59a40ac6.chunk.css",
+    "main.js": "/learn-linux/static/js/main.d57a2a87.chunk.js",
+    "main.js.map": "/learn-linux/static/js/main.d57a2a87.chunk.js.map",
     "runtime-main.js": "/learn-linux/static/js/runtime-main.e3b2b7f2.js",
     "runtime-main.js.map": "/learn-linux/static/js/runtime-main.e3b2b7f2.js.map",
     "static/js/2.cb6f4a5e.chunk.js": "/learn-linux/static/js/2.cb6f4a5e.chunk.js",
     "static/js/2.cb6f4a5e.chunk.js.map": "/learn-linux/static/js/2.cb6f4a5e.chunk.js.map",
     "index.html": "/learn-linux/index.html",
-    "precache-manifest.1aa37aa5422a5de8a8a6dd608d8e54ec.js": "/learn-linux/precache-manifest.1aa37aa5422a5de8a8a6dd608d8e54ec.js",
+    "precache-manifest.a5194a78acf0cb1617c14d4650bf1466.js": "/learn-linux/precache-manifest.a5194a78acf0cb1617c14d4650bf1466.js",
     "service-worker.js": "/learn-linux/service-worker.js",
-    "static/css/main.5121748c.chunk.css.map": "/learn-linux/static/css/main.5121748c.chunk.css.map",
+    "static/css/main.59a40ac6.chunk.css.map": "/learn-linux/static/css/main.59a40ac6.chunk.css.map",
     "static/js/2.cb6f4a5e.chunk.js.LICENSE.txt": "/learn-linux/static/js/2.cb6f4a5e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/learn-linux/static/media/RobotoMono-Regular.e5ca8c0a.ttf",
     "static/media/index.md": "/learn-linux/static/media/index.fd050d6d.md"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3b2b7f2.js",
     "static/js/2.cb6f4a5e.chunk.js",
-    "static/css/main.5121748c.chunk.css",
-    "static/js/main.a4f8e07e.chunk.js"
+    "static/css/main.59a40ac6.chunk.css",
+    "static/js/main.d57a2a87.chunk.js"
   ]
 }
