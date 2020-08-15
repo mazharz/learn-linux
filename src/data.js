@@ -118,8 +118,8 @@ const data = [
     file: "025_disks_and_mounting/index.md",
   },
   {
-    name: "System state control",
-    url: "system-state-control",
+    name: "System state information",
+    url: "system-state-information",
     file: "026_system_state_information/index.md",
   },
   {
