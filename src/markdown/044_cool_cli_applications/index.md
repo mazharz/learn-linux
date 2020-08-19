@@ -1,1 +1,36 @@
-TO BE DONE
+This is just a simple list of applications that you might want to look into. You don't have to, but you can.
+
+- monitoring
+  - htop
+  - gtop
+- file manager
+  - ranger
+  - mc
+- music
+  - alsa-utils
+  - mocp
+  - mpd and ncmpcpp
+  - cava
+- multimedia
+  - youtube-dl
+- video editing
+  - ffmpeg
+- image editing
+  - imagemagick
+- image screenshot
+  - maim
+  - scrot
+- cal
+- cron
+  - crontab -e
+  - contab -l
+- eyecandy
+  - screenfetch
+  - neofetch
+- web browser
+  - w3m
+  - elinks
+  - links2
+- irc clients
+  - irssi
+  - weechat
