@@ -1,7 +1,0 @@
-# nano
-
-# Vim
-
-# Emacs
-
-# Conclusion
