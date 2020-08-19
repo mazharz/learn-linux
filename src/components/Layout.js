@@ -14,6 +14,7 @@ function Layout({ children }) {
       setTheme(currentTheme);
     } else {
       localStorage.setItem("theme", "red-dark");
+      setTheme("red-dark");
     }
   }, []);
 
